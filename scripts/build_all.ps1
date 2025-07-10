@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "SMOD_Tactical_Delta_5.56" `
+  -ModName "SMOD: Tactical Delta 5.56" `
+  -ModFolder "smodtactical556" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/smod-tactical/smodtactical-5.56-full+texturefix.zip" `
+  -ModBaseFilesUrlHash "37eb3c850981a6f1dece71dfdbeec5e56c5ed8d1ef564a43e997e22052e036e9" `
+  -ModReadmePath "Tactical-Readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
